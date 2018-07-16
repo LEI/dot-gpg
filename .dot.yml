@@ -1,0 +1,7 @@
+---
+role:
+  pkg:
+    - gnupg
+  template:
+    - ".gpg-agent.conf.tpl"
+
