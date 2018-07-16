@@ -2,6 +2,9 @@
 role:
   pkg:
     - gnupg
+  link:
+    - ".gpp.conf"
   template:
     - ".gpg-agent.conf.tpl"
-
+  env:
+    pinentry_program: '{{if eq .OS "darwin"}}/usr/local/bin/pinentry-mac{{end}}'
