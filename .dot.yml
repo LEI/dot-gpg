@@ -11,10 +11,8 @@ role:
     # - ".gpg-agent.conf.tpl"
     - source: .gpg-agent.conf.tpl
       # target: check ~/.gnupg/.gpg-agent.conf
-      env:
-        pinentry_program: '{{if eq .OS "darwin"}}/usr/local/bin/pinentry-mac{{end}}'
-  # env:
-  #   ...
+  env:
+    pinentry_program: '{{if eq .OS "darwin"}}/usr/local/bin/pinentry-mac{{end}}'
   # install:
   #   # https://github.com/blog/2144-gpg-signature-verification
   #   # https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
