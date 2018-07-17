@@ -1,5 +1,14 @@
 # Enables GPG to find gpg-agent
 use-standard-socket
-# pinentry-program {{.PINENTRY_PROGRAM}}
-# default-cache-ttl 600
-# max-cache-ttl 7200
+
+pinentry-program {{.PINENTRY_PROGRAM}}
+
+# Duration before cache expire, reset
+# each time a cache entry is accessed
+# Default is 10 minutes (600 seconds)
+default-cache-ttl 3600
+
+# Expire cache entry even if it has been
+# accessed or set using gpg-preset-passphrase
+# Default is 2 hours (7200 seconds)
+max-cache-ttl 7200
