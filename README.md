@@ -1,3 +1,3 @@
-# dot-mutt
+# dot-gpg
 
-[ArchWiki](https://wiki.archlinux.org/index.php/GnuPG)
+[GnuPG ArchWiki](https://wiki.archlinux.org/index.php/GnuPG)
