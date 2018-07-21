@@ -1,3 +1,3 @@
 # dot-gpg
 
-[GnuPG ArchWiki](https://wiki.archlinux.org/index.php/GnuPG)
+[GnuPG](https://wiki.archlinux.org/index.php/GnuPG)
