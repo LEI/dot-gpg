@@ -13,6 +13,7 @@ role:
     - ".gnupg/gpg-agent.conf.tpl:.gnupg"
       # target: check ~/.gnupg/.gpg-agent.conf
   env:
+    # /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac
     pinentry_program: '{{if eq .OS "darwin"}}/usr/local/bin/pinentry-mac{{end}}'
   # install:
   #   # https://github.com/blog/2144-gpg-signature-verification
