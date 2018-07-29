@@ -2,7 +2,10 @@
 role:
   pkg:
     - gnupg
-    - gpg-agent # Debian: gnupg-agent
+    - name: gnupg-agent
+      os: ["archlinux"]
+    - name: gpg-agent
+      os: ["darwin", "debian"]
     - name: pinentry-mac
       os: ["darwin"]
     # - name: pass
