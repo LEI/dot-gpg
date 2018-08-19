@@ -1,9 +1,11 @@
 ---
 role:
   pkg:
-    - gnupg
+    - name: gnupg
+      action: install
     - name: gpg-agent # gnupg-agent
       os: ["darwin", "debian"]
+      # action: install
     - name: pinentry-mac
       os: ["darwin"]
     # - name: pass
