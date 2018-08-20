@@ -6,6 +6,9 @@ role:
     - name: gpg-agent # gnupg-agent
       os: debian # ["darwin", "debian"]
       # action: install
+    # - name: gpg-suite
+    #   type: cask
+    #   os: ["darwin"]
     - name: pinentry-mac
       os: ["darwin"]
     # - name: pass
