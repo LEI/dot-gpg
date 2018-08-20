@@ -4,7 +4,7 @@ role:
     - name: gnupg
       action: install
     - name: gpg-agent # gnupg-agent
-      os: ["darwin", "debian"]
+      os: debian # ["darwin", "debian"]
       # action: install
     - name: pinentry-mac
       os: ["darwin"]
