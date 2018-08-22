@@ -3,9 +3,12 @@ role:
   pkg:
     - name: gnupg
       action: install
+      os: ["!windows"]
     - name: gpg-agent # gnupg-agent
       os: debian # ["darwin", "debian"]
       # action: install
+    - name: gpg4win
+      os: ["windows"]
     # - name: gpg-suite
     #   type: cask
     #   os: ["darwin"]
