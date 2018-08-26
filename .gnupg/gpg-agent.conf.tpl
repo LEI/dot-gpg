@@ -1,7 +1,8 @@
 # Enables GPG to find gpg-agent
 use-standard-socket
-{{if .pinentry_program}}
-pinentry-program {{.pinentry_program}}{{end}}
+{{if .PINENTRY_PROGRAM}}
+pinentry-program {{.PINENTRY_PROGRAM}}
+{{- end}}
 
 # Duration before cache expire, reset
 # each time a cache entry is accessed
