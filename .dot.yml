@@ -24,6 +24,6 @@ role:
       # target: check ~/.gnupg/.gpg-agent.conf
   env:
     # /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac
-    pinentry_program: '{{if eq .OS "darwin"}}/usr/local/bin/pinentry-mac{{end}}'
+    PINENTRY_PROGRAM: '{{if eq .OS "darwin"}}/usr/local/bin/pinentry-mac{{end}}'
   # install:
   #   # https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
