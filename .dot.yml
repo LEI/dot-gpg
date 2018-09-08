@@ -4,7 +4,9 @@ role:
     - name: gnupg
       action: install
       os: ["!windows"]
-    - name: gpg-agent # gnupg-agent
+    - name: gnupg-agent
+      # macOs: included in gnupg
+      # debian 9: aliased to gpg-agent
       os: debian # ["darwin", "debian"]
       # action: install
     # - name: gpg4win
